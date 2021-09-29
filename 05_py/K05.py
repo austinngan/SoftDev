@@ -1,4 +1,4 @@
-#Austin Ngan
+#Austin Ngan, Han Zhang
 #SoftDev
 #K01 -- Random Name Python Practice
 #2021-09-22
@@ -39,3 +39,5 @@ def getName():
     if period==2:
         randName2=random.choice(KREWES.get('pd2'))
         print ("Period" + period + ": " + randName2)
+
+getName()
