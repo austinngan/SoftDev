@@ -1,4 +1,4 @@
-# Wen Hao Dong
+# Fabulous Frogs: David Chong, Wen Hao Dong, Austin Ngan
 # SoftDev
 # K06 - Divine your Destiny!
 #
