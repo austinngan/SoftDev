@@ -45,16 +45,50 @@ color.
 
 ### Github-Flavored Markdown
 
-Markdown is
+Markdown is essentially a markup language that helps to format and "fancify" any plain text files (i.e. README files) on GitHub.
+
+#### Headers
 
 For headers, you can use up to 6 hash (#) sign. The sizes of your header decreases with the amount of hash symbols you put.
 ```
 # This is a large header
 ## This is smaller than large
 ### This is smaller than smaller than large
+#### Getting smaller
+##### and smaller
+###### smallest
 ```
 
+#### Fancy Text
 
+To draw ***attention*** to pieces of text, the use of asterisks ( * ) or underscores ( _ )  can be used to either *italicize* and **bold text**, or ***even both***!
+
+```
+*italics*
+_italics_
+
+**bold**
+__bold__
+
+***bold AND italics***
+___bold AND italics___
+```
+
+#### Links
+
+For [links](https://www.stuycs.org/), you can either simply paste the link, or format a piece of text that sends you to a link by using square brackets, followed by the link in parentheses.
+
+```
+[Stuyvesant](stuy.edu)
+```
+
+#### Code!
+
+There are two ways to represent code in Markdown. The first is by putting the code in the same line as your text `like this`, with a single backtick around the text. The other is block code, which uses triple backticks around the code you want to show.
+
+```
+`inline code`
+```
 
 ---
 
