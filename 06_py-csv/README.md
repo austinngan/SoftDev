@@ -49,7 +49,7 @@ Markdown is essentially a markup language that helps to format and "fancify" any
 
 #### Headers
 
-For headers, you can use up to 6 hash (#) sign. The sizes of your header decreases with the amount of hash symbols you put.
+For headers, you can use up to 6 hash (#) signs. The sizes of your header decreases with the amount of hash symbols you put.
 ```
 # This is a large header
 ## This is smaller than large
