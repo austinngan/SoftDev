@@ -1,1 +1,1 @@
-# Software Development (2021-22) workshop for Austin Ngan 
+# Software Development workshop for Austin Ngan (2021-22)
