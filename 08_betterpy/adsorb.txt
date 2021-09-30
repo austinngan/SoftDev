@@ -1,6 +1,8 @@
 Austin Ngan	
 Softdev
 K08: Cross Pollination and Virtual Insanity
-09-30-21
+2021-09-30
 
 Trio Treeo: Kevin Cao, Shadman Rakib, Austin Ngan
+
+Kevin's approach to the code was to multiply the percentage given by 100 in order to eliminate the decimal points
