@@ -56,6 +56,8 @@ def weighted_selection():
         weights=weights
     )[0]  # random.choices returns a list, so it needs to be indexed
 
+def printJobs():
+    return "<br />".join(data.keys())
 
 # Tests if the weights are working correctly
 def test():
