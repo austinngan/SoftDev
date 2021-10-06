@@ -1,0 +1,22 @@
+Fabulous Frogs: David Chong (with Fluff), Wen Hao Dong (with Jal Hordan), and Austin Ngan (with Gerald)
+SoftDev
+2021-10-06
+
+-- Predictions:
+When we go to localhost:5000, the web browser will display:
+"No hablo queso!" but in the terminal, it will print out:
+"the __name__ of this module is..." and "__main__".
+
+If we go to localhost:5000/static/foo, it will display the
+contents of the /static/foo file.
+
+If we go to localhost:5000/static/foo.html, the browser will
+parse the html and display "Is this plaintext, though?".
+
+-- Observations:
+For localhost:5000 and localhost:5000/static/foo.html, our
+predictions were correct.
+
+For localhost:5000/static/foo, however, it differed from our
+expectations, and instead it tries to open the file and asks
+to save the foo file.
