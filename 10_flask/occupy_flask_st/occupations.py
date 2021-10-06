@@ -1,4 +1,4 @@
-# Fabulous Frogs: David Chong, Wen Hao Dong, Austin Ngan
+# Fabulous Frogs: David Chong (with Fluff), Wen Hao Dong (with Jal Hordan), and Austin Ngan (with Gerald)
 # SoftDev
 # K06 - Divine your Destiny!
 #

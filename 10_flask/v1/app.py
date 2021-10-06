@@ -1,4 +1,4 @@
-# Fabulous Frogs: David Chong, Wen Hao Dong, and Austin Ngan (with Gerald)
+# Fabulous Frogs: David Chong (with Fluff), Wen Hao Dong (with Jal Hordan), and Austin Ngan (with Gerald)
 # SoftDev
 # 2021-10-04
 
