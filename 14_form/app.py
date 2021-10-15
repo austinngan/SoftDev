@@ -52,7 +52,7 @@ def authenticate():
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission
+    return render_template('response.html', heading = teamBerd, greeting = greet, username = (request.args).get("username"), request = req)  #response to a form submission
 
 
 
