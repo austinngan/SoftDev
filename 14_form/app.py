@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
+# Team Berd: Austin Ngan (Gerald), Thomas Yu (Perry), Mark Zhu (Bob the Third Jr)
 # SoftDev
-# Oct 2021 
+# K14: Form and Function
+# 2021-10-14
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -54,8 +55,8 @@ def authenticate():
     return "Waaaa hooo HAAAH"  #response to a form submission
 
 
-    
+
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
