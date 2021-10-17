@@ -12,6 +12,9 @@ from flask import request           #facilitate form submission
 
 app = Flask(__name__)    #create Flask object
 
+teamBerd = "Team Berd: Austin Ngan, Thomas Yu, Mark Zhu"
+req = "<Request 'http://127.0.0.1:5000/' [GET]>"
+greet = "Hullo humon, Berd appreciates your visit. Enjoy your stay."
 
 '''
 trioTASK:
