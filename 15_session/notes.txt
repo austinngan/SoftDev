@@ -9,6 +9,6 @@ We noticed some errors that didn't really matter? (favicon error when requesting
 TO DO:
 make new templates depending on if username/password is incorrect
 finish conditional checks
-probably need to use request.cookies.get('username") to establish a session
+probably need to use request.cookies.get('username") to establish a session if the user is logged in/has logged in previously
 comments!
 note more dev console stuff
