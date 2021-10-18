@@ -1,0 +1,7 @@
+Team Berd: Austin Ngan (Gerald), Thomas Yu (Perry), Mark Zhu (Bob the Third Jr)
+SoftDev
+K15: Sessions Greetings
+2021-10-18
+
+Dev Console:
+We noticed some errors that didn't really matter? (favicon error when requesting)
