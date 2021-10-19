@@ -6,6 +6,7 @@
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
 from flask import request           #facilitate form submission
+from flask import session           #facilitate session
 
 #the conventional way:
 #from flask import Flask, render_template, request
@@ -16,6 +17,7 @@ teamBerd = "Team Berd: Austin Ngan, Thomas Yu, Mark Zhu" #TNPG + roster for both
 greet = "Hullo humon, Berd appreciates your visit. Enjoy your stay." #Greeting to be displayed on the response page
 username = "Username"
 password = "Password123"
+#Session['username'] = "Username"
 
 
 2021-10-14
