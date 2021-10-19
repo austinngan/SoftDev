@@ -12,3 +12,6 @@ finish conditional checks
 probably need to use request.cookies.get('username") to establish a session if the user is logged in/has logged in previously
 comments!
 note more dev console stuff
+have to pop the session everytime the user logs out
+keep track of cookies to see if the user is logged in
+log out button
