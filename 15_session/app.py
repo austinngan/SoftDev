@@ -51,11 +51,12 @@ def authenticate():
     #print("***DIAG: request.headers ***")
     #print(request.headers)
     if (request.method) == 'GET':
-    	if (request.args['username']==username and request.args['password']==password):
     	if (request.args['username']!=username):
+    		return render_template('badUser.html')
     	if (request.args['password']!=password):
-    	
-    	return render_template('response.html', heading = teamBerd, greeting = greet, username 		= request.args['username'], request = request.method)  #uses response template to 		create the webpage
+    		return render_template('badPass.html')
+    	else:
+    		return render_template('response.html', heading = teamBerd, greeting = greet, username = request.args['username'], request = request.method)  #uses response template to 			create the webpage
     if (request.method) == 'POST':
     	return render_template('response.html', heading = teamBerd, greeting = greet, username 		= request.form['username'], request = request.method)  #uses response template to 		create the webpage
 
