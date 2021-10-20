@@ -55,14 +55,14 @@ def authenticate():
     if (request.method) == 'GET':
     	if (request.args['username']!=username):
     		return render_template('badUser.html')
-    	if (request.args['password']!=password):
+    	elif (request.args['password']!=password):
     		return render_template('badPass.html')
     	else:
     		return render_template('response.html', heading = teamBerd, greeting = greet, username = request.args['username'], request = request.method)  #uses response template to 			create the webpage
     if (request.method) == 'POST':
     	if (request.form['username']!=username):
     		return render_template('badUser.html')
-    	if (request.form['password']!=password):
+    	elif (request.form['password']!=password):
     		return render_template('badPass.html')
     	else:
     		return render_template('response.html', heading = teamBerd, greeting = greet, username = request.form['username'], request = request.method)  #uses response template to 			create the webpage
@@ -72,4 +72,3 @@ if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
     app.debug = True
     app.run()
-
