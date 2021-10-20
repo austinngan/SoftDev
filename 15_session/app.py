@@ -1,7 +1,7 @@
 #Team Berd: Austin Ngan (Gerald), Thomas Yu (Perry), Mark Zhu (Bob the Third Jr)
 #SoftDev
-#K14: Form and Function
-#2021-10-14
+#K15: Sessions Greetings
+#2021-10-19
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -12,12 +12,11 @@ from flask import session           #facilitate session
 #from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
+app.secret_key="asdf123"
 
 teamBerd = "Team Berd: Austin Ngan, Thomas Yu, Mark Zhu" #TNPG + roster for both landing and response pages
-greet = "Hullo humon, Berd appreciates your visit. Enjoy your stay." #Greeting to be displayed on the response page
 username = "Username"
 password = "Password123"
-#Session['username'] = "Username"
 
 
 2021-10-14
@@ -46,27 +45,31 @@ def authenticate():
     #print(app)
     #print("***DIAG: request obj ***")
     #print(request)
-    #print("***DIAG: request.args ***")#Prints a dictionary that now has the username as well as submit.
+    #print("***DIAG: request.args ***") #Prints a dictionary that now has the username as well as submit.
     #print(request.args)
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     #print("***DIAG: request.headers ***")
     #print(request.headers)
-    if (request.method) == 'GET':
-    	if (request.args['username']!=username):
-    		return render_template('badUser.html')
-    	elif (request.args['password']!=password):
-    		return render_template('badPass.html')
-    	else:
-    		return render_template('response.html', heading = teamBerd, greeting = greet, username = request.args['username'], request = request.method)  #uses response template to 			create the webpage
-    if (request.method) == 'POST':
-    	if (request.form['username']!=username):
-    		return render_template('badUser.html')
-    	elif (request.form['password']!=password):
-    		return render_template('badPass.html')
-    	else:
-    		return render_template('response.html', heading = teamBerd, greeting = greet, username = request.form['username'], request = request.method)  #uses response template to 			create the webpage
+    greet = "" #Greeting to be displayed on the response page
+    if (request.method == 'GET'): #getting user and pass for GET
+        tempUser = request.args['username']
+        tempPass = request.args['password']
+    elif (request.method == 'POST'): #getting user and pass for POST
+        tempUser = request.form['username']
+        tempPass = request.form['password']
+    if (tempUser != username): #wrong username
+        greet += "Error: Username is incorrect. "
+    if (tempPass != password): #wrong password
+        greet += "Error: Password is incorrect. "
+    if (tempUser == username and tempPass == password):
+        greet += "Hullo humon, Berd appreciates your visit. Enjoy your stay. "
+    return render_template('response.html', heading = teamBerd, greeting = greet, username = tempUser, password = tempPass, request = request.method)  #uses response template to create the webpage
 
+@app.route("/logOut")
+def logOut():
+    session.pop('u',None)
+    return render_template('login.html',warning="You have successfully logged out.")
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
