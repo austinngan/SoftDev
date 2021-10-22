@@ -16,10 +16,20 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
+command = "CREATE TABLE roster(name TEXT, age INTEGER, id INTEGER)" 
+#c.execute(command)
 
-
-command = ""          # test SQL stmt in sqlite3 shell, save as string
-c.execute(command)    # run SQL statement
+with open("students.csv", newline='') as csvfile:
+    studentReader = csv.DictReader(csvfile)
+    for row in studentReader:
+    	
+    	#age=row['age']
+    	#identification=row['id']
+	#print(name)
+	#print(age)
+	#print(identification)
+	#addData = "INSERT INTO roster VALUES (name, age, identification);"
+        c.execute("INSERT INTO roster VALUES("+"'"+row['name']+"'"+", "+row['age']+", "+row['id']+")")
 
 #==========================================================
 
