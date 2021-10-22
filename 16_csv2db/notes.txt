@@ -1,0 +1,9 @@
+Team Berd: Austin Ngan (Gerald), Thomas Yu (Perry), Mark Zhu (Bob the Third Jr)
+SoftDev
+K16: All About Database
+2021-10-22
+
+Need semicolons in sqlite3 shell
+Trying to insert text into the database requires a string format
+Manually added single quotes in first command
+had to manually add 8 spaces to execute command??????????
