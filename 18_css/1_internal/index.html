@@ -5,8 +5,52 @@
        K18 -- CSS basics
        2021-11-23t
 
-	 WORK FILE for CSS 	
+	 WORK FILE for CSS
     -->
+
+  <style>
+
+  body {
+    display: flex;
+    background-color: #A9A9A9;
+    font-family: Arial;
+  }
+
+  h1 {
+    color:white;
+    font-family: Arial, sans-serif;
+    background-color:#808080;
+  }
+
+  div {
+    width: 20%;
+    padding: 0 0 100px 0;
+    float: left;
+  }
+
+  nav {
+    width: 18%;
+    height: 90%;
+  }
+
+  nav ul {
+    list-style: none;
+
+  }
+
+  nav a {
+    color: white;
+  }
+
+  footer {
+    display: flex;
+    justify-content: right;
+    background-color: white;
+    width: 100%;
+    height: 10%;
+  }
+
+  </style>
 
   <head>
     <meta charset="utf-8"/>
@@ -14,20 +58,32 @@
   </head>
 
   <body>
-    <h1>foo heading 1</h1>
+
+    <!-- MAIN TITLE BEGINNING -->
+    <h1>
+      <center>foo heading 1</center>
+    </h1>
+    <!-- MAIN TITLE END -->
+
+    <!-- NAVIGATION BAR BEGINNING -->
+    <div>
     <h3>nav foo</h3>
-    <ul>
-      <li><a href="">dis</a></li>
-      <li><a href="">dat</a></li>
-      <li><a href="">de udda ting</a></li>
-    </ul>
-    <h2>main foo heading</h2>
-    <p>tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk 
+      <ul>
+        <li><a href="">dis</a></li>
+        <li><a href="">dat</a></li>
+        <li><a href="">de udda ting</a></li>
+      </ul>
+    </div>
 
-      <br>
-      <br>
+    <div style = "width: 80%; padding: 0 0 100px 0;float: right">
+      <h2>main foo heading</h2>
+      <p>tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk </p>
+    </div>
+   <!-- NAVIGATION BAR END -->
 
-      Copyright &copy; 2021 Clyde "Thluffy" Sinclair
+   <footer>
+     Copyright &copy; 2021 Clyde "Thluffy" Sinclair
+   </footer>
 
   </body>
 
