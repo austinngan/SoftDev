@@ -16,9 +16,8 @@ def test():
 	html=json.loads(data.read())
 	#print(html)
 	pic=html['url']
-	date=html['date']
 	explanation=html['explanation']
-	return render_template('main.html', date=date, pic=pic, explanation=explanation)
+	return render_template('main.html', pic=pic, explanation=explanation)
 
 
 if __name__ == "__main__": #false if this file imported as module
