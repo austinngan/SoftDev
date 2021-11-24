@@ -4,16 +4,21 @@
 #2021-11-22
 
 
-from flask import Flask, render_template, request, urllib
+from flask import Flask, render_template
+import urllib.request
+import json
 
 app = Flask(__name__)
 
 @app.route("/")
 def test():
-	data=urllib.request("https://api.nasa.gov/planetary/apod?api_key=A6sYUc7R6zCWzLWQTrcuf2Kw2QclDsBJRr3TsGbg")
-
-	print(data)
-	#return render_template( 'main.html')
+	data=urllib.request.urlopen("https://api.nasa.gov/planetary/apod?api_key=A6sYUc7R6zCWzLWQTrcuf2Kw2QclDsBJRr3TsGbg")
+	html=json.loads(data.read())
+	#print(html)
+	pic=html['url']
+	date=html['date']
+	explanation=html['explanation']
+	return render_template('main.html', date=date, pic=pic, explanation=explanation)
 
 
 if __name__ == "__main__": #false if this file imported as module
