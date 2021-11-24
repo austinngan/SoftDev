@@ -17,7 +17,8 @@ def test():
 	#print(html)
 	pic=html['url']
 	explanation=html['explanation']
-	return render_template('main.html', pic=pic, explanation=explanation)
+	title=html['title']
+	return render_template('main.html', title=title, pic=pic, explanation=explanation)
 
 
 if __name__ == "__main__": #false if this file imported as module
