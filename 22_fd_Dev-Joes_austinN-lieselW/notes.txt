@@ -1,1 +1,6 @@
+Dev-Joes: K22: Who Does Frame Work For?
+SoftDev
+K18 -- Comic Sans Syndrome/CSS/Try and copy a picture with CSS
+2021-11-22
+
 row small-up-1 medium-up-2 large-up-3 changes table size based off window size
