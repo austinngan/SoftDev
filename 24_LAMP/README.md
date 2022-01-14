@@ -5,6 +5,7 @@
 3. SSH into your VM through your own terminal or the DigitalOcean website
 4. Update by running ``` $ apt update && apt upgrade ```
 5. Install Apache2 by running ```$ apt install apache2```
-6. Allow Apache through the firewall ```$ ufw allow in "Apache"``` and ```$ ufw status``` to check if Apache is run through the firewall
+6. Allow Apache through the firewall ```$ ufw allow in "Apache"``` 
+7. Activate your firewall using ```ufw allow``` and ```$ ufw status``` to check if your firewall is enabled and Apache is allowed through it
 
 ## Adding a user account
