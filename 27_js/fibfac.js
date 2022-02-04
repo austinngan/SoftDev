@@ -1,4 +1,4 @@
-// Team People :: Cameron Nelson, Austin Ngan 
+// Team People :: Cameron Nelson (Bob), Austin Ngan (Gerald) 
 // SoftDev pd2
 // K27 -- Basic functions in JavaScript
 // 2022-02-04
