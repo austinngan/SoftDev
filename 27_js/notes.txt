@@ -1,18 +1,17 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team People :: Cameron Nelson (Bob), Austin Ngan (Gerald)
+SoftDev pd2
 K27 -- Basic functions in JavaScript
-2022-02-03r
+2022-02-04
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
+- JS syntax is very similar to Java
+- Defining functions is similar to using lambda in Scheme
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
+- Why should we declare fucntions using" var fxnName = (args) =>{" instead of "function fxnName(args){"? 
+
 =================================================================
 
