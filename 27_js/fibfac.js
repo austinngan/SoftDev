@@ -1,13 +1,33 @@
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Team People :: Cameron Nelson, Austin Ngan 
+// SoftDev pd2
 // K27 -- Basic functions in JavaScript
-// 2022-02-03r
+// 2022-02-04
 // --------------------------------------------------
 
 
-// as a duo...
-// pair programming style,
-// implement a fact and fib fxn
+var fac = (n) =>{
+	if (n==0){
+		return 1
+		}
+		
+	else{
+		return (fac(n-1)*n)
+	}
+		
+}
+
+var fib = (n) => {
+	if (n==0){
+		return 0
+	}
+	if (n==1){
+		return 1
+	}
+	else{
+		return (fib(n-1)+fib(n-2))
+	}
+}
+
 
 
 //Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
