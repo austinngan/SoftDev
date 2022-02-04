@@ -20,6 +20,8 @@ var fib = (n) => {
 	if (n==0){
 		return 0
 	}
+// could also do if (n<=1){return n}
+
 	if (n==1){
 		return 1
 	}
