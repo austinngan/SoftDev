@@ -1,4 +1,4 @@
-// Team People :: Cameron Nelson (Bob), Austin Ngan (Gerald)
+// Team Persons :: Justin Morrill, Cameron Nelson, Austin Ngan
 // SoftDev pd2
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2022-02-08t
@@ -62,13 +62,13 @@ var stripe = function() {
 };
 
 //insert your implementations here for...
-var fact = (n) =>{
+var fac = (n) =>{
 	if (n==0){
 		return 1;
 		}
 
 	else{
-		return (fact(n-1)*n);
+		return (fac(n-1)*n);
 	}
 
 }
@@ -112,8 +112,8 @@ var gcd = (a,b) =>{
 		}
 	}
 
-var gen_fact = () =>{
-	document.getElementById("fact_div").innerHTML = fact(5);
+var gen_fac = () =>{
+	document.getElementById("fac_div").innerHTML = fac(5);
 }
 
 var gen_fib = () =>{
@@ -124,6 +124,6 @@ var gen_gcd = () =>{
 	document.getElementById("gcd_div").innerHTML = gcd(10,6);
 }
 
-document.getElementById("a").addEventListener('click', gen_fact);
+document.getElementById("a").addEventListener('click', gen_fac);
 document.getElementById("b").addEventListener('click', gen_fib);
 document.getElementById("c").addEventListener('click', gen_gcd);
