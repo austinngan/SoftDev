@@ -1,0 +1,8 @@
+
+Team People :: Cameron Nelson (Bob), Austin Ngan (Gerald)
+SoftDev pd2
+K28 -- DOMfoolery
+2022-02-08
+
+var dasbut = document.getElementById("b");
+dasbut.addEventListener('click', fxnName);
