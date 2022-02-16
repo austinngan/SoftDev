@@ -9,7 +9,7 @@
 
 
 //access canvas and buttons via DOM
-var c = document.getElementById("slate");
+var c = document.getElementById("playground");
 var dotButton = document.getElementById("buttonCircle");
 var stopButton = document.getElementById("buttonStop");
 
@@ -38,45 +38,36 @@ var growing = true;
 //var drawDot = function() {
 var drawDot = () => {
   console.log("drawDot invoked...");
-  requestID = window.requestAnimationFrame(drawDot);
+  window.cancelAnimationFrame(requestID);
+  requestID = window.requestAnimationFrame(drawCircle);
   console.log(requestID);
-  growing=true;
-  if (growing){
-  	ctx.beginPath();
-  	ctx.arc(c.clientLength/2,c.clientWidth/2,1,1,2*Math.PI);
-  }
-  else{
-  	stopIt();
-  }
-  /*
-    ...to
-    Wipe the canvas,
-    Repaint the circle,
 
-    ...and somewhere (where/when is the right time?)
-    Update requestID to propagate the animation.
-    You will need
-    window.cancelAnimationFrame(requestID)
-    window.requestAnimationFrame()
-
-   */
 };
 
+var drawCircle = () => {
+	clear();
+	ctx.fillStyle = 'blue';
+	ctx.beginPath();
+	ctx.arc(c.clientWidth / 2, c.clientHeight / 2, radius, 0,  2 * Math.PI);
+	ctx.fill();
+	if (growing) {
+		if (++radius == Math.min(c.clientWidth / 2,c.clientHeight / 2)) {
+			growing = false;
+		}
+	} else {
+		if (--radius == 0) {
+			growing = true;
+		}
+	}
+	requestID=window.requestAnimationFrame(drawCircle);
+}
 
 //var stopIt = function() {
 var stopIt = () => {
   console.log("stopIt invoked...")
   console.log( requestID );
-  growing=false;
+  window.cancelAnimationFrame(requestID);
 
-  // YOUR CODE HERE
-  /*
-    ...to
-    Stop the animation
-
-    You will need
-    window.cancelAnimationFrame()
-  */
 };
 
 
