@@ -1,0 +1,8 @@
+Team People :: Cameron Nelson (Bob), Austin Ngan (Gerald)
+SoftDev pd2
+K31 -- Paint Paint Paint...
+2022-02-16
+
+- To stop animation from going faster, you need to set requestID equal to window.requestAnimationFrame(drawCircle), rather than just running window.requestAnimationFrame(drawCircle).
+
+- Stopping the animation only needs window.cancelAnimationFrame(requestID).
