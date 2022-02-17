@@ -73,11 +73,11 @@ var stopIt = () => {
 
 var drawDVD = () => {
 	console.log("drawDVD invoked...");
-	var image = new Image(30,20);
+	var image = new Image();
 	image.onload = function (){
 		cancelAnimationFrame(requestID);
 		clear();
-		ctx.drawImage(image,30,20);
+		ctx.drawImage(image,0,0,90,60);
 	}
 	image.src='logo_dvd.jpg';
 }
