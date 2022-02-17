@@ -72,15 +72,28 @@ var stopIt = () => {
 
 
 var drawDVD = () => {
-	console.log("drawDVD invoked...");
-	var image = new Image();
-	image.onload = function (){
-		cancelAnimationFrame(requestID);
-		clear();
-		ctx.drawImage(image,0,0,90,60);
-	}
-	image.src='logo_dvd.jpg';
-}
+  var image = new Image(); // CREATE NEW IMAGE
+  console.log("draw dvd");
+  let x = Math.floor(Math.random() * (c.width - 120));
+  let y = Math.floor(Math.random() * (c.height - 80));
+  dX = 1;
+  dY = 1;
+  image.onload = function drawDVD1 () {
+    cancelAnimationFrame(requestID);
+    clear();
+    if (x == c.width - 120 || x == 0) {
+      dX *= -1;
+    }
+    if (y == c.height - 80 || y == 0) {
+      dY *= -1;
+    }
+    x += dX;
+    y += dY;
+    ctx.drawImage(image, x, y, 120, 80);
+    requestID = requestAnimationFrame(drawDVD1)
+  };
+  image.src = "logo_dvd.jpg";
+};
 
 dotButton.addEventListener( "click", drawDot );
 stopButton.addEventListener( "click",  stopIt );
